@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Mark JS-enabled before first paint so scroll-in animations start from their
+         hidden state with no flash-of-visible-content. No-JS clients never get this
+         class, so they render everything visible. Paired with `html.js` in in-view.css. -->
+    <script>
+      document.documentElement.classList.add('js')
+    </script>
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon-180x180.png" />
+    <link rel="manifest" href="./app.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+    <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
+    <link rel="preconnect" href="https://storage.googleapis.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://storage.googleapis.com/sunny-public/static/images/landing-v2/hero-lifestyle.webp"
+      as="image"
+      type="image/webp"
+      fetchpriority="high"
+    />
+    <link rel="preconnect" href="https://cdn.us.heap-api.com" crossorigin />
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+    <link rel="preconnect" href="https://maps.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://connect.facebook.net" crossorigin />
+    <link rel="preconnect" href="https://script.hotjar.com" crossorigin />
+    <link rel="preconnect" href="https://www.redditstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://connect.facebook.net" />
+    <link rel="dns-prefetch" href="https://script.hotjar.com" />
+    <link rel="dns-prefetch" href="https://www.redditstatic.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <style>
+      /* Critical CSS for above-the-fold content */
+      body {
+        font-family:
+          'Poppins',
+          -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          Roboto,
+          sans-serif;
+        margin: 0;
+      }
+      .h-\[60vh\] {
+        height: 60vh;
+      }
+      .w-full {
+        width: 100%;
+      }
+      .relative {
+        position: relative;
+      }
+      .absolute {
+        position: absolute;
+      }
+      .inset-0 {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+      .object-cover {
+        object-fit: cover;
+      }
+      .bg-black\/70 {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+      .flex {
+        display: flex;
+      }
+      .items-center {
+        align-items: center;
+      }
+      .justify-center {
+        justify-content: center;
+      }
+      .h-full {
+        height: 100%;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .text-white {
+        color: white;
+      }
+      .text-4xl {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+      }
+      .font-bold {
+        font-weight: 700;
+      }
+      .leading-tight {
+        line-height: 1.25;
+      }
+      .mb-4 {
+        margin-bottom: 1rem;
+      }
+      .px-4 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .md\:w-1\/2 {
+        width: 50%;
+      }
+      @media (min-width: 768px) {
+        .md\:w-1\/2 {
+          width: 50%;
+        }
+      }
+      @media (min-width: 1024px) {
+        .lg\:text-6xl {
+          font-size: 3.75rem;
+          line-height: 1;
+        }
+      }
+    </style>
+    <!--1tjfi6g--><script>
+    // Wrapped in an IIFE so its declarations stay function-scoped. Svelte 5 can
+    // re-execute this inline <svelte:head> script during hydration; a top-level
+    // `const` would then throw "Identifier already declared" and abort hydration.
+    // The guard also keeps the consent-default call idempotent across runs.
+    ;(function () {
+      window.dataLayer = window.dataLayer || []
+
+      function gtag() {
+        window.dataLayer = window.dataLayer || []
+        window.dataLayer.push(arguments)
+      }
+      // Expose gtag globally (the deferred GTM loader calls window.gtag).
+      window.gtag = window.gtag || gtag
+
+      if (window.__sunnyConsentDefaultSet) return
+      window.__sunnyConsentDefaultSet = true
+
+      var consent = {
+        ad_storage: 'granted',
+        ad_user_data: 'granted',
+        ad_personalization: 'granted',
+        analytics_storage: 'granted',
+        functionality_storage: 'granted',
+        personalization_storage: 'granted',
+        security_storage: 'granted'
+      }
+
+      // localStorage can throw (private mode) and the stored value may be
+      // malformed JSON. Guard both so a bad read can't throw inside this head
+      // script and re-break hydration — fall back to the granted defaults.
+      try {
+        var storedConsent = localStorage.getItem('consent_options')
+        if (storedConsent) consent = JSON.parse(storedConsent)
+      } catch (e) {
+        // ignore — use defaults
+      }
+
+      gtag('consent', 'default', consent)
+    })()
+  </script><!----><!----><!--1uha8ag--><meta name="description" content="Search thousands of apartments and get Cash Back when you move in. Find your perfect place with Sunny, then get paid through Venmo or a Visa Gift Card."/> <link rel="canonical" href="https://www.sunny.com"/> <meta property="og:type" content="website"/> <meta property="og:site_name" content="Sunny"/> <meta property="og:title" content="Sunny | The apartment search that pays you back"/> <meta property="og:description" content="Search thousands of apartments and get Cash Back when you move in. Find your perfect place with Sunny, then get paid through Venmo or a Visa Gift Card."/> <meta property="og:url" content="https://www.sunny.com"/> <meta property="og:image" content="https://storage.googleapis.com/sunny-public/static/images/landing-v2/hero-lifestyle.webp"/> <meta name="twitter:card" content="summary_large_image"/> <meta name="twitter:title" content="Sunny | The apartment search that pays you back"/> <meta name="twitter:description" content="Search thousands of apartments and get Cash Back when you move in. Find your perfect place with Sunny, then get paid through Venmo or a Visa Gift Card."/> <meta name="twitter:image" content="https://storage.googleapis.com/sunny-public/static/images/landing-v2/hero-lifestyle.webp"/> <!----><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.sunny.com/#organization","name":"Sunny","url":"https://www.sunny.com","logo":"https://www.sunny.com/pwa-512x512.png","description":"Search thousands of apartments and get Cash Back when you move in. Find your perfect place with Sunny, then get paid through Venmo or a Visa Gift Card."},{"@type":"WebSite","@id":"https://www.sunny.com/#website","name":"Sunny","url":"https://www.sunny.com","description":"Search thousands of apartments and get Cash Back when you move in. Find your perfect place with Sunny, then get paid through Venmo or a Visa Gift Card.","publisher":{"@id":"https://www.sunny.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.sunny.com/quiz?location={search_term_string}"},"query-input":"required name=search_term_string"}}]}</script><!----><!----><title>Sunny | The apartment search that pays you back</title>
+		<link href="./_app/immutable/assets/bottom-sheet.CEg-kD0S.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/0.CrbRC-P_.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/PhotoGallery.BJ3m4ajQ.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/ListingCard.es0b5h2R.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/CashbackButton.C78l4eXY.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/MarketingHeroSection.URB9jEzx.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/12.BMpXJaG-.css" rel="stylesheet">
+  </head>
+  <body data-sveltekit-preload-data="hover" class="antialiased">
+    <div style="display: contents"><!--[--><!--[0--><!--[--><!--[--><!--[0--><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N5BPSDZ5" height="0" width="0" style="display: none; visibility: hidden" title=""></iframe></noscript> <!--[-1--><!--]--><!----> <!----><!--]--> <!----> <!--[-1--><!--]--><!----> <!----> <!--[-1--><!--]--><!----> <!--[0--><header class="sticky top-0 z-40 shrink-0"><nav class="hidden"><div class="max-w-content mx-auto px-4 sm:px-6 lg:px-12"><div class="flex h-header items-center justify-between gap-4"><a href="/" class="flex shrink-0 items-center text-2xl font-bold leading-tight tracking-tight text-gray-900" aria-label="Sunny home"><span class="sr-only">Sunny Logo</span> <svg class="mr-2 size-7 flex-shrink-0" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M247.035 38.228c-8.304-8.304-21.766-8.304-30.07 0L70.228 184.965c-8.304 8.304-8.304 21.766 0 30.07l146.737 146.738c8.304 8.303 21.766 8.303 30.07 0l146.738-146.738c8.303-8.304 8.303-21.766 0-30.07zm45.896 222.364c33.609-33.607 33.609-88.097 0-121.705-33.608-33.608-88.096-33.608-121.704 0-33.608 33.608-33.608 88.098 0 121.705 33.608 33.608 88.096 33.608 121.704 0z" fill="#effe53"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M215.035 38.228c-8.304-8.304-21.766-8.304-30.07 0L38.228 184.965c-8.304 8.304-8.304 21.766 0 30.07l146.737 146.738c8.304 8.303 21.766 8.303 30.07 0l146.738-146.738c8.303-8.304 8.303-21.766 0-30.07zm45.896 222.364c33.609-33.607 33.609-88.097 0-121.705-33.608-33.608-88.096-33.608-121.704 0-33.608 33.608-33.608 88.098 0 121.705 33.608 33.608 88.096 33.608 121.704 0z" fill="#000"></path></svg><!----> <span class="flex flex-col leading-none"><span>sunny</span> <span class="text-[0.625rem] font-semibold uppercase tracking-widest text-gray-500">beta</span></span></a> <!--[-1--><!--]--> <div class="-mr-2 flex shrink-0 items-center md:ml-4"><div><!--[0--><div class="flex items-center space-x-4"><!--[--><a href="/auth/login" rel="nofollow" class="border-b-2 border-transparent px-3 py-2 text-sm font-medium text-black underline transition-all hover:text-gray-600">Sign In</a><a href="/auth/signup" rel="nofollow" class="border-b-2 border-transparent px-3 py-2 text-sm font-medium text-black underline transition-all hover:text-gray-600">Sign Up</a><!--]--></div><!--]--></div> <!----><!----></div></div><!----></div></nav></header><!--]--> <!--[-1--><!--[--><main class="flex grow flex-col justify-around"><!--[-1--><div data-testid="unregistered-landing-v2"><nav data-testid="landing-nav" class="sticky top-0 z-50 w-full bg-white"><div class="max-w-content mx-auto flex items-center justify-between px-4 py-4 sm:px-6 lg:px-12"><a href="/" class="flex items-center gap-2" aria-label="Sunny home"><span class="sr-only">Sunny Logo</span> <svg class="size-7 shrink-0" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M247.035 38.228c-8.304-8.304-21.766-8.304-30.07 0L70.228 184.965c-8.304 8.304-8.304 21.766 0 30.07l146.737 146.738c8.304 8.303 21.766 8.303 30.07 0l146.738-146.738c8.303-8.304 8.303-21.766 0-30.07zm45.896 222.364c33.609-33.607 33.609-88.097 0-121.705-33.608-33.608-88.096-33.608-121.704 0-33.608 33.608-33.608 88.098 0 121.705 33.608 33.608 88.096 33.608 121.704 0z" fill="#effe53"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M215.035 38.228c-8.304-8.304-21.766-8.304-30.07 0L38.228 184.965c-8.304 8.304-8.304 21.766 0 30.07l146.737 146.738c8.304 8.303 21.766 8.303 30.07 0l146.738-146.738c8.303-8.304 8.303-21.766 0-30.07zm45.896 222.364c33.609-33.607 33.609-88.097 0-121.705-33.608-33.608-88.096-33.608-121.704 0-33.608 33.608-33.608 88.098 0 121.705 33.608 33.608 88.096 33.608 121.704 0z" fill="#000"></path></svg><!----> <span class="flex flex-col text-2xl font-bold leading-none text-black"><span>sunny</span> <span class="text-[0.625rem] font-semibold uppercase tracking-widest text-gray-500">beta</span></span></a> <div class="flex items-center gap-4 md:gap-6"><a data-testid="landing-nav-signin" href="/auth/login" rel="nofollow" class="text-xs font-semibold text-black hover:underline sm:text-base sm:font-medium">Sign in</a> <a data-testid="landing-nav-signup" href="/auth/signup" rel="nofollow" class="rounded-full bg-black px-4 py-2 text-xs font-semibold text-white transition-colors hover:bg-gray-800 sm:px-5 sm:py-2.5 sm:text-base">Sign up</a> <button data-testid="landing-nav-menu-toggle" type="button" class="flex size-10 items-center justify-center rounded-full bg-[#e8e6e1] text-black transition-colors hover:bg-gray-300 sm:size-12" aria-label="Open menu" aria-expanded="false"><!--[-1--><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-menu size-5 sm:size-6"><!--[--><!----><path d="M4 12h16"><!----></path><!----><!----><path d="M4 18h16"><!----></path><!----><!----><path d="M4 6h16"><!----></path><!----><!--]--><!----><!----></svg><!--]--></button></div></div></nav> <!--[-1--><!--]--><!----><!----> <section class="relative w-full overflow-x-clip bg-[#deeeff] js-anim"><div class="max-w-content mx-auto px-4 py-12 sm:px-6 lg:px-12 lg:py-20"><div class="flex flex-col gap-5 lg:min-h-[460px] lg:w-1/2 lg:justify-center lg:pr-10"><!--[-1--><!--]--> <!--[0--><h1 data-testid="landing-hero-heading" class="text-4xl font-bold leading-tight text-black md:text-5xl lg:text-6xl">The apartment search that pays you back</h1><!----><!--]--> <!--[0--><p class="text-lg font-medium text-black md:text-2xl">Start searching—and find your dream place, fast.</p><!----><!--]--> <!--[0--><div class="mt-2 flex w-full max-w-[552px] items-center gap-2 rounded-full border border-[#ccc] bg-white/70 p-1 pl-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-map-pin size-5 shrink-0 text-black/70" aria-hidden="true"><!--[--><!----><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"><!----></path><!----><!----><circle cx="12" cy="10" r="3"><!----></circle><!----><!--]--><!----><!----></svg><!----> <div class="min-w-0 flex-1"><div class="flex w-full flex-wrap justify-center gap-4"><div class="relative w-full"><input type="text" data-testid="location-search-input" class="peer h-12 w-full truncate border-none bg-transparent pl-0 pr-4 text-lg font-medium focus-visible:outline-none focus-visible:ring-0 cursor-pointer" value="" placeholder="Where do you want to live?" enterkeyhint="send"/> <!--[-1--><!--]--> <!--[-1--><!--]--> <!--[-1--><!--]--></div></div><!----></div> <button data-testid="landing-hero-search-button" type="button" class="shrink-0 rounded-full bg-black px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-gray-800">Search</button></div><!----><!--]--></div></div> <!--[0--><div class="hero-media hero-media--xs-bg relative w-full sm:h-auto md:w-full lg:absolute lg:inset-y-0 lg:right-0 lg:aspect-auto lg:h-auto lg:w-1/2 xs:aspect-[113/122] svelte-1gqsw94" style="--hero-xs-image: url('https://storage.googleapis.com/sunny-public/static/images/landing-v2/hero-lifestyle.webp');"><img src="https://storage.googleapis.com/sunny-public/static/images/landing-v2/hero-lifestyle.webp" alt="A person relaxing on a green velvet sofa in a colorful, book-filled living room" class="size-full object-cover xs:hidden svelte-1gqsw94" width="1100" height="933" loading="eager" fetchpriority="high" onload="this.__e=event" onerror="this.__e=event"/> <span class="badge-rise absolute flex items-center justify-center rounded-[10px] border-2 border-black bg-yellow font-semibold text-[#1b7a3e] left-3 top-8 sm:left-8 sm:top-10 md:left-16 md:top-12 lg:-left-[54px] lg:top-16 px-2 py-3 sm:p-5 md:p-5 md:text-md text-3xl sm:text-3xl xs:text-lg svelte-1gqsw94">$200 Cash Back <span class="pointer-events-none absolute bottom-0 right-0 translate-x-[58%] translate-y-[74%] text-7xl leading-none sm:text-7xl md:text-8xl lg:text-[128px] xs:text-5xl" aria-hidden="true">💸</span></span> <div class="absolute bottom-[8%] right-[30px] flex flex-col items-stretch gap-3 sm:right-[70px] sm:gap-4"><span style="animation-delay: 150ms" class="badge-rise h-[36.72px] w-[128px] rounded-[10px] border-2 border-black bg-yellow px-2 py-2 text-center text-xs font-semibold text-black sm:h-auto sm:w-auto sm:px-5 sm:py-3 sm:text-xl lg:text-2xl">10% Price Drop</span> <span style="animation-delay: 300ms" class="badge-rise h-[36.72px] w-[128px] rounded-[10px] border-2 border-black bg-yellow px-2 py-2 text-center text-xs font-semibold text-black sm:h-auto sm:w-auto sm:px-5 sm:py-3 sm:text-xl lg:text-2xl">Great Match</span></div></div><!----><!--]--></section><!----> <section data-testid="landing-how-it-works" class="js-anim w-full overflow-x-clip bg-white"><div class="max-w-content mx-auto px-4 py-12 sm:px-6 lg:px-12 lg:py-20"><span class="w-fit text-xs font-bold uppercase tracking-wide text-black">How it works</span> <h2 class="mt-4 text-2xl font-bold text-black md:text-3xl">Find it, sign it, get <br class="block sm:hidden"/> paid. That's it.</h2> <div class="mt-12 grid grid-cols-1 gap-x-8 gap-y-0 md:mt-16 md:grid-cols-2 md:justify-items-center md:gap-y-16 lg:grid-cols-3"><div class="flex flex-col md:max-w-[264px] xl:max-w-full"><div class="flex justify-center pt-2"><div class="relative w-full max-w-[264px] sm:max-w-[306px]"><div class="card-appear min-h-[315px] overflow-hidden rounded-[13px] border border-[#d4d4d4] bg-white shadow-[20px_-18px_0_0_#EFFE53]"><img src="https://storage.googleapis.com/sunny-public/static/images/landing-v2/solace-broadway.webp" alt="Solace Broadway living room" class="h-[180px] w-full object-cover" width="306" height="180" loading="lazy"/> <div class="p-3"><div class="flex items-center gap-2"><span class="rounded-[3px] bg-[#def7eb] px-2 py-1 text-[10px] font-medium text-black">5% price drop</span> <span class="rounded-[3px] bg-gray-100 px-2 py-1 text-[10px] font-medium text-black">Pet friendly</span> <span class="rounded-[3px] bg-gray-100 px-2 py-1 text-[10px] font-medium text-black">+2</span></div> <div class="mt-3 flex items-center justify-between gap-2"><span class="text-lg font-bold text-[#333]">Solace Broadway</span> <span class="shrink-0 rounded-full bg-yellow px-2.5 py-1 text-xs font-semibold text-black">Great Match</span></div> <div class="mt-1.5 flex items-center justify-between"><span class="text-xs text-gray-500">Base rent from</span> <span class="text-base font-semibold text-[#158c27]">$1,700+ mo</span></div></div></div> <span class="badge-zoom absolute left-[-45px] top-[26px] rounded-[10px] border border-black bg-[#f0fdf4] px-5 py-4 text-lg font-semibold text-[#1b7a3e] shadow-sm" style="animation-delay: 250ms">$200 Cash Back</span></div></div> <div class="mt-6 flex gap-4"><span class="text-6xl font-bold leading-none text-[#0d6dd8]">1</span> <div><h3 class="text-xl font-bold text-black">Find an eligible apartment</h3> <p class="mt-1 text-base text-black">Browse thousands of apartments with Cash Back included.</p></div></div> <a href="/quiz" class="mx-auto mt-6 flex h-[35px] w-[291px] max-w-full items-center justify-center rounded-full bg-black text-xs font-semibold text-white transition-colors hover:bg-gray-800 md:hidden">Find your place</a></div> <div class="mt-12 flex flex-col border-t border-gray-200 pt-12 md:mt-0 md:max-w-[264px] md:border-t-0 md:pt-0 xl:max-w-full"><div class="flex justify-center pt-2"><div class="relative w-full max-w-[264px] sm:max-w-[306px]"><div class="card-appear min-h-[315px] rounded-[13px] border border-[#d4d4d4] bg-white p-4 shadow-[20px_-18px_0_0_#EFFE53]" style="animation-delay: 0ms"><div class="flex items-center gap-2.5"><img src="https://storage.googleapis.com/sunny-public/static/images/landing-v2/solace-broadway.webp" alt="" class="size-11 shrink-0 rounded-lg object-cover" width="44" height="44" loading="lazy"/> <div class="min-w-0"><p class="truncate text-base font-bold text-[#333]">Solace Broadway</p> <p class="text-[11px] font-medium text-black">600 N 4th St, <a href="https://www.sunny.com/az/phoenix" target="_blank" rel="noopener noreferrer" class="underline">Phoenix, AZ</a> 85004</p></div></div> <div class="badge-zoom relative left-[-42px] my-3.5 flex w-[140%] items-center gap-2.5 rounded-lg border border-black bg-[#f0fdf4] px-4 py-3.5 shadow-sm sm:w-[134%] md:left-[-2.3rem] md:w-[140%] md:max-w-[340px] lg:left-[-42px] lg:w-[140%] lg:max-w-[373px]" style="animation-delay: 250ms"><svg class="shrink-0 " width="26" height="15" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 2C0 0.895431 0.895431 0 2 0H22C23.1046 0 24 0.895431 24 2V12C24 13.1046 23.1046 14 22 14H2C0.895431 14 0 13.1046 0 12V2Z" fill="#03E093"></path><path d="M20 12C21.1046 12 22 12.8954 22 14H2C2 12.8954 2.89543 12 4 12H20ZM22 4C22 2.89543 21.1046 2 20 2H4C2.89543 2 2 2.89543 2 4V14L1.7959 13.9893C0.854346 13.8938 0.1062 13.1457 0.0107422 12.2041L0 12V2C0 0.895431 0.895431 3.22128e-08 2 0H22C23.1046 0 24 0.895431 24 2V12C24 13.0357 23.2128 13.887 22.2041 13.9893L22 14V4Z" fill="#009963"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M12.358 3.14829C12.1603 2.95057 11.8397 2.95057 11.642 3.14829L8.14829 6.64202C7.95057 6.83974 7.95057 7.16026 8.14829 7.35797L11.642 10.8517C11.8397 11.0494 12.1603 11.0494 12.358 10.8517L15.8517 7.35797C16.0494 7.16026 16.0494 6.83974 15.8517 6.64202L12.358 3.14829ZM13.4507 8.44266C14.2509 7.6425 14.2509 6.34512 13.4507 5.54493C12.6505 4.74474 11.3532 4.74474 10.553 5.54493C9.75283 6.34512 9.75283 7.6425 10.553 8.44266C11.3532 9.24285 12.6505 9.24285 13.4507 8.44266Z" fill="#009963"></path><path d="M4 0C5.10457 0 6.03263 0.920007 5.67126 1.96379C5.07092 3.69777 3.69777 5.07092 1.96379 5.67126C0.920006 6.03263 0 5.10457 0 4V2C0 0.895431 0.895431 3.22128e-08 2 0H4Z" fill="#009963"></path><path d="M4 14C5.10457 14 6.03263 13.08 5.67126 12.0362C5.07092 10.3022 3.69777 8.92908 1.96379 8.32874C0.920006 7.96737 0 8.89543 0 10V12C0 13.1046 0.895431 14 2 14H4Z" fill="#009963"></path><path d="M20 0C18.8954 0 17.9674 0.920007 18.3287 1.96379C18.9291 3.69777 20.3022 5.07092 22.0362 5.67126C23.08 6.03263 24 5.10457 24 4V2C24 0.895431 23.1046 0 22 0H20Z" fill="#009963"></path><path d="M20 14C18.8954 14 17.9674 13.08 18.3287 12.0362C18.9291 10.3022 20.3022 8.92908 22.0362 8.32874C23.08 7.96737 24 8.89543 24 10V12C24 13.1046 23.1046 14 22 14H20Z" fill="#009963"></path></svg><!----> <div class="leading-tight"><p class="whitespace-nowrap text-[13px] text-gray-700">Complete both steps below to unlock</p> <p class="text-xl font-semibold text-[#008236]">$200 Cash Back</p></div></div> <p class="text-[9px] font-bold uppercase tracking-[0.08em] text-gray-500">2 steps to claim</p> <div class="mt-2 space-y-2 px-7"><div class="flex items-center gap-1.5 rounded-xl border border-[#cfe7d7] bg-[#e8f5ec] px-2 py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#1b7a3e" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-circle-check size-[18px] shrink-0 text-white"><!--[--><!----><circle cx="12" cy="12" r="10"><!----></circle><!----><!----><path d="m9 12 2 2 4-4"><!----></path><!----><!--]--><!----><!----></svg><!----> <div class="min-w-0 flex-1"><div class="flex min-w-0 items-center gap-1"><span class="truncate text-[8px] font-semibold text-[#333]">Verify your email</span> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-mail size-3.5 shrink-0 text-gray-600"><!--[--><!----><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"><!----></path><!----><!----><rect x="2" y="4" width="20" height="16" rx="2"><!----></rect><!----><!--]--><!----><!----></svg><!----></div> <p class="truncate text-[8px] font-semibold text-[#1b7a3e]">j•••n@example.com</p></div> <span class="shrink-0 text-[8px] font-semibold text-[#1b7a3e]">Verified</span></div> <div class="flex items-center gap-1.5 rounded-xl border border-[#cfe7d7] bg-[#e8f5ec] px-2 py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#1b7a3e" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-circle-check size-[18px] shrink-0 text-white"><!--[--><!----><circle cx="12" cy="12" r="10"><!----></circle><!----><!----><path d="m9 12 2 2 4-4"><!----></path><!----><!--]--><!----><!----></svg><!----> <div class="min-w-0 flex-1"><div class="flex min-w-0 items-center gap-1"><span class="truncate text-[8px] font-semibold text-[#333]">Verify Venmo account</span> <span class="inline-flex size-3.5 shrink-0 items-center justify-center rounded bg-[#3d95ce] text-[8px] font-bold text-white">V</span></div> <p class="truncate text-[8px] font-semibold text-[#1b7a3e]">Sending to @soasdlk</p></div> <span class="shrink-0 text-[8px] font-semibold text-[#1b7a3e]">Verified</span></div></div></div></div></div> <div class="mt-6 flex gap-4"><span class="text-6xl font-bold leading-none text-[#0d6dd8]">2</span> <div><h3 class="text-xl font-bold text-black">Sign a lease and move in</h3> <p class="mt-1 text-base text-black">Once your move-in is confirmed, your Cash Back offer is available in your account.</p></div></div> <a href="/quiz" class="mx-auto mt-6 flex h-[35px] w-[291px] max-w-full items-center justify-center rounded-full bg-black text-xs font-semibold text-white transition-colors hover:bg-gray-800 md:hidden">Find your place</a></div> <div class="mt-12 flex flex-col border-b border-t border-gray-200 pb-12 pt-12 md:mt-0 md:max-w-[264px] md:border-b-0 md:border-t-0 md:pb-0 md:pt-0 xl:max-w-full"><div class="flex justify-center pt-2"><div class="relative w-full max-w-[264px] sm:max-w-[306px]"><div class="card-appear flex min-h-[315px] flex-col items-center justify-center rounded-[13px] border border-[#d4d4d4] bg-white px-6 py-8 shadow-[20px_-18px_0_0_#EFFE53]" style="animation-delay: 0ms"><div class="flex size-[68px] items-center justify-center rounded-full border border-[#16a34a] bg-[#dcfce7]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-banknote size-8 text-[#16a34a]"><!--[--><!----><rect width="20" height="12" x="2" y="6" rx="2"><!----></rect><!----><!----><circle cx="12" cy="12" r="2"><!----></circle><!----><!----><path d="M6 12h.01M18 12h.01"><!----></path><!----><!--]--><!----><!----></svg><!----></div> <p class="mt-5 text-[30px] font-bold leading-tight text-black">You are all set</p> <p class="mt-3 text-center text-sm text-gray-500">$200 Cash Back has been sent to <span class="font-bold">@soasdlk.</span> Please allow
+                a few hours for the transaction to go through.</p></div> <span class="pop-emoji absolute -right-3 -top-10 text-7xl sm:-right-12 sm:-top-14 sm:text-8xl lg:-right-20 lg:-top-16 lg:text-9xl" style="animation-delay: 450ms" aria-hidden="true">🎉</span></div></div> <div class="mt-6 flex gap-4"><span class="text-6xl font-bold leading-none text-[#0d6dd8]">3</span> <div><h3 class="text-xl font-bold text-black">Get paid</h3> <p class="mt-1 text-base text-black">Get paid through Venmo or Visa Gift Card once your move-in is confirmed.</p></div></div> <a href="/quiz" class="mx-auto mt-6 flex h-[35px] w-[291px] max-w-full items-center justify-center rounded-full bg-black text-xs font-semibold text-white transition-colors hover:bg-gray-800 md:hidden">Find your place</a></div></div></div></section><!----> <section data-testid="landing-browse-cities" class="w-full bg-white"><div class="max-w-content mx-auto px-4 pt-12 sm:px-6 lg:px-12 lg:pt-16"><span class="w-fit text-xs font-bold uppercase tracking-wide text-black">Browse by city</span> <h2 class="mt-4 text-4xl font-bold text-black">Find apartments with Cash Back in popular cities</h2></div> <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4"><!--[--><a data-testid="landing-city-card" data-slug="/il/chicago" href="/il/chicago" class="group relative block aspect-[3/2] w-full overflow-hidden lg:aspect-[437/487]" aria-busy="false"><img src="https://storage.googleapis.com/sunny-public/static/images/landing-v2/chicago.webp" alt="Apartments in Chicago, IL" class="size-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/> <div class="absolute inset-0 bg-black/50" aria-hidden="true"></div> <span class="absolute inset-0 flex items-center justify-center px-4 text-center text-3xl font-bold text-yellow lg:text-[39px]">Chicago, IL</span> <!--[-1--><!--]--></a><a data-testid="landing-city-card" data-slug="/ca/los-angeles" href="/ca/los-angeles" class="group relative block aspect-[3/2] w-full overflow-hidden lg:aspect-[437/487]" aria-busy="false"><img src="https://storage.googleapis.com/sunny-public/static/images/landing-v2/los-angeles.webp" alt="Apartments in Los Angeles, CA" class="size-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/> <div class="absolute inset-0 bg-black/50" aria-hidden="true"></div> <span class="absolute inset-0 flex items-center justify-center px-4 text-center text-3xl font-bold text-yellow lg:text-[39px]">Los Angeles, CA</span> <!--[-1--><!--]--></a><a data-testid="landing-city-card" data-slug="/tx/houston" href="/tx/houston" class="group relative block aspect-[3/2] w-full overflow-hidden lg:aspect-[437/487]" aria-busy="false"><img src="https://storage.googleapis.com/sunny-public/static/images/landing-v2/houston.webp" alt="Apartments in Houston, TX" class="size-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/> <div class="absolute inset-0 bg-black/50" aria-hidden="true"></div> <span class="absolute inset-0 flex items-center justify-center px-4 text-center text-3xl font-bold text-yellow lg:text-[39px]">Houston, TX</span> <!--[-1--><!--]--></a><!--]--> <a data-testid="landing-browse-more-cities" href="/sitemap" class="flex items-center justify-center bg-[#d5e6f5] px-8 py-12 md:justify-start lg:aspect-[437/487] lg:py-0"><span class="text-lg font-semibold text-black underline underline-offset-2">Browse more cities</span></a></div></section><!----> <section class="w-full bg-black" data-testid="landing-closing-cta"><div class="max-w-content mx-auto flex flex-col items-center gap-6 px-4 py-16 text-center sm:px-6 lg:px-12 lg:py-24"><h2 class="text-4xl font-bold text-white md:text-5xl">It pays to rent</h2> <p class="text-lg font-medium text-white md:text-2xl">Join renters already getting <br class="block sm:hidden"/> Cash Back on Sunny.</p> <!----><button class="select-none inline-flex items-center justify-center ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-700 focus-visible:ring-offset-2 disabled:bg-gray-300 disabled:text-gray-700 disabled:cursor-not-allowed border border-black hover:border-gray-600 disabled:border-transparent h-12 rounded-full bg-yellow px-8 py-3 text-base font-semibold text-black transition-transform hover:scale-105 hover:text-black sm:px-8" type="button"><!---->Search<!----><!----></button><!----><!----></div></section><!----> <footer data-testid="site-footer" class="w-full bg-black"><div class="max-w-content mx-auto px-4 py-10 sm:px-6 lg:px-12"><div class="mb-10 sm:mb-8"><a href="/" class="flex items-center" aria-label="Sunny home"><span class="sr-only">Sunny Logo</span> <svg class="h-10 w-auto shrink-0 sm:h-7" viewBox="0 0 148 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M49.2828 25.4689C47.6387 25.4689 46.1748 25.1923 44.891 24.639C43.6073 24.0858 42.5938 23.3334 41.8506 22.3818C41.1073 21.4081 40.6907 20.3237 40.6006 19.1287H46.3099C46.3775 19.7704 46.6815 20.2905 47.222 20.6888C47.7625 21.0872 48.4269 21.2863 49.2152 21.2863C49.9359 21.2863 50.4877 21.1536 50.8706 20.888C51.276 20.6003 51.4787 20.2352 51.4787 19.7926C51.4787 19.2615 51.1971 18.8742 50.6341 18.6308C50.071 18.3652 49.1589 18.0775 47.8977 17.7677C46.5464 17.4579 45.4203 17.137 44.5194 16.805C43.6185 16.451 42.8415 15.9088 42.1884 15.1785C41.5352 14.4261 41.2087 13.4192 41.2087 12.1578C41.2087 11.0955 41.5015 10.1329 42.087 9.2698C42.6951 8.3846 43.5735 7.68751 44.7221 7.17852C45.8932 6.66953 47.2783 6.41504 48.8774 6.41504C51.2422 6.41504 53.1002 6.99042 54.4515 8.14117C55.8254 9.29193 56.6136 10.8189 56.8163 12.7221H51.4787C51.3886 12.0803 51.0958 11.5713 50.6003 11.1951C50.1273 10.8189 49.4967 10.6308 48.7085 10.6308C48.0328 10.6308 47.5148 10.7636 47.1545 11.0291C46.7941 11.2726 46.6139 11.6156 46.6139 12.0582C46.6139 12.5893 46.8955 12.9876 47.4585 13.2532C48.0441 13.5187 48.9449 13.7843 50.1611 14.0499C51.5575 14.4039 52.6948 14.758 53.5732 15.1121C54.4515 15.444 55.2173 15.9973 55.8704 16.7718C56.5461 17.5243 56.8952 18.5422 56.9177 19.8258C56.9177 20.9101 56.6024 21.8839 55.9718 22.7469C55.3637 23.5879 54.4741 24.2518 53.3029 24.7386C52.1543 25.2255 50.8143 25.4689 49.2828 25.4689Z" fill="white"></path><path d="M79.0663 6.6806V25.2033H73.2894V22.6805C72.7039 23.4993 71.9043 24.1632 70.8909 24.6722C69.8999 25.1591 68.7963 25.4025 67.5801 25.4025C66.1387 25.4025 64.8662 25.0927 63.7627 24.4731C62.6591 23.8313 61.8033 22.9129 61.1952 21.7179C60.5871 20.5229 60.283 19.1176 60.283 17.5021V6.6806H66.0261V16.7386C66.0261 17.9779 66.3527 18.9406 67.0058 19.6266C67.659 20.3126 68.5373 20.6556 69.6409 20.6556C70.767 20.6556 71.6566 20.3126 72.3097 19.6266C72.9629 18.9406 73.2894 17.9779 73.2894 16.7386V6.6806H79.0663Z" fill="white"></path><path d="M94.7019 6.48143C96.9091 6.48143 98.6658 7.18959 99.9721 8.6059C101.301 10.0001 101.965 11.9254 101.965 14.3818V25.2033H96.2222V15.1453C96.2222 13.906 95.8956 12.9434 95.2425 12.2573C94.5893 11.5713 93.711 11.2283 92.6074 11.2283C91.5038 11.2283 90.6255 11.5713 89.9724 12.2573C89.3192 12.9434 88.9926 13.906 88.9926 15.1453V25.2033H83.2158V6.6806H88.9926V9.13702C89.5782 8.31821 90.3665 7.67644 91.3574 7.21172C92.3484 6.72486 93.4632 6.48143 94.7019 6.48143Z" fill="white"></path><path d="M117.466 6.48143C119.673 6.48143 121.43 7.18959 122.736 8.6059C124.065 10.0001 124.729 11.9254 124.729 14.3818V25.2033H118.986V15.1453C118.986 13.906 118.659 12.9434 118.006 12.2573C117.353 11.5713 116.475 11.2283 115.371 11.2283C114.268 11.2283 113.389 11.5713 112.736 12.2573C112.083 12.9434 111.756 13.906 111.756 15.1453V25.2033H105.98V6.6806H111.756V9.13702C112.342 8.31821 113.13 7.67644 114.121 7.21172C115.112 6.72486 116.227 6.48143 117.466 6.48143Z" fill="white"></path><path d="M148 6.6806L136.176 34H129.96L134.284 24.5726L126.615 6.6806H133.068L137.426 18.2656L141.75 6.6806H148Z" fill="white"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M18.1615 1.81145L5.1922 14.5551C4.74259 14.9968 4.74259 15.7131 5.1922 16.1549L18.1615 28.8985C18.6111 29.3403 19.3401 29.3403 19.7897 28.8985L32.759 16.1549C33.2086 15.7131 33.2086 14.9968 32.759 14.5551L19.7897 1.81145C19.3401 1.36966 18.6111 1.36966 18.1615 1.81145ZM24.8711 9.6391C28.1258 12.8372 28.1258 18.0222 24.8711 21.2203C21.6164 24.4184 16.3394 24.4184 13.0847 21.2203C9.83004 18.0222 9.83004 12.8372 13.0847 9.6391C16.3394 6.44105 21.6164 6.44105 24.8711 9.6391ZM17.6468 1.30567C18.3807 0.58455 19.5705 0.584547 20.3044 1.30566L33.2738 14.0493C34.0077 14.7704 34.0077 15.9396 33.2738 16.6607L20.3044 29.4043C19.5706 30.1254 18.3807 30.1254 17.6468 29.4043L4.67746 16.6607C3.94357 15.9396 3.94357 14.7704 4.67746 14.0493L17.6468 1.30567ZM24.3563 10.1449C27.3267 13.0636 27.3267 17.7958 24.3563 20.7145C21.3859 23.6332 16.5699 23.6332 13.5995 20.7145C10.6291 17.7958 10.6291 13.0636 13.5995 10.1449C16.5699 7.22616 21.3859 7.22616 24.3563 10.1449Z" fill="#EFFE53"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M16.9558 1.4447C16.2219 0.723585 15.032 0.723587 14.2982 1.4447L1.32883 14.1883C0.594935 14.9094 0.594937 16.0786 1.32883 16.7997L14.2982 29.5433C15.032 30.2645 16.2219 30.2645 16.9558 29.5433L29.9251 16.7997C30.659 16.0786 30.659 14.9094 29.9251 14.1883L16.9558 1.4447ZM21.0119 20.7551C23.9824 17.8364 23.9824 13.1042 21.0119 10.1855C18.0415 7.26678 13.2255 7.26678 10.2551 10.1855C7.28469 13.1042 7.28469 17.8364 10.2551 20.7551C13.2255 23.6739 18.0415 23.6739 21.0119 20.7551Z" fill="white"></path></svg><!----></a></div> <div class="flex flex-col gap-10 sm:flex-row sm:items-center sm:justify-between sm:gap-6"><div class="flex flex-col text-[0.75rem] font-medium leading-[1.87] tracking-[0.12px] text-white sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-6 sm:gap-y-3 sm:text-base sm:leading-normal sm:tracking-normal"><span>© 2026 Sunny</span> <a class="hover:text-gray-300" href="/about">About</a> <a class="hover:text-gray-300" href="/faq">FAQs</a> <a class="hover:text-gray-300" href="/blog">Blog</a> <a class="hover:text-gray-300" href="/terms">Terms</a> <a class="hover:text-gray-300" href="/privacy">Privacy</a> <a class="hover:text-gray-300" href="/cookie-settings">Do not sell or share my personal info</a> <a class="hover:text-gray-300" href="/sitemap">Sitemap</a></div> <div class="flex items-center gap-12 sm:gap-4"><a aria-label="Facebook" class="size-7 text-white hover:text-gray-300 sm:size-6" href="https://www.facebook.com/rentwithsunny/" rel="noopener noreferrer nofollow" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z"></path></svg><!----></a> <a aria-label="Instagram" class="size-7 text-white hover:text-gray-300 sm:size-6" href="https://www.instagram.com/rentwithsunny/" rel="noopener noreferrer nofollow" target="_blank"><svg focusable="false" role="img" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path></svg><!----></a> <a aria-label="X" class="size-7 text-white hover:text-gray-300 sm:size-6" href="https://x.com/rentwithsunny" rel="noopener noreferrer nofollow" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"></path></svg><!----></a> <a aria-label="LinkedIn" class="size-7 text-white hover:text-gray-300 sm:size-6" href="https://www.linkedin.com/company/rentwithsunny/" rel="noopener noreferrer nofollow" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286ZM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125ZM6.914 20.452H3.727V9h3.187v11.452Z"></path></svg><!----></a></div></div></div></footer><!----></div><!--]--></main><!--]--><!--]--><!----> <div><div class="fixed inset-x-0 top-0 z-50 h-1"><div class="h-full bg-blue-light" style="width: 0%"></div></div><!----></div><!----> <!--[0--><section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false" class="svelte-g9u2i5"><!--[-1--><!--]--></section><!--]--> <!--[-1--><!--]--><!----> <!--[-1--><!--]--><!----><!--]--><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
+			
+			<script>
+				{
+					const deferred = new Map();
+
+					__sveltekit_b1hhig = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {"PUBLIC_AL_CHAT_TO_LEASE_BASE_URL":"https://chattolease.apartmentlist.io","PUBLIC_CONTENTFUL_ACCESS_TOKEN":"AEUv5wlMCmZ4QiiClvYNfXpUJd9HltXK1IuFvlwhxKg","PUBLIC_CONTENTFUL_PREVIEW_ACCESS_TOKEN":"ZzzkJhE4hTrfqmTyeMgldFjHMJmEZuG20JJiQzt8VIg","PUBLIC_CONTENTFUL_SPACE":"q131gehs2pma","PUBLIC_DD_CLIENT_TOKEN":"pubee49013da679b4e12b402be5731b6f5a","PUBLIC_DD_RUM_APP_ID":"9b47bac3-c0e3-482a-a8a1-ed32e6b4c7b7","PUBLIC_DD_SERVICE":"sunny-ai","PUBLIC_ENV":"production","PUBLIC_GOOGLE_ADS_CONVERSION_ID":"AW-17417567598","PUBLIC_GOOGLE_CLIENT_ID":"487104027853-trthbn7von0mdn9a8pocda4rkvku02dp.apps.googleusercontent.com","PUBLIC_GOOGLE_MAPS_API_KEY":"AIzaSyD1G0wm8YFbs6yo_CUuLvdeo4DHo2ZfAaM","PUBLIC_GOOGLE_MAPS_MAP_ID":"aa2988657290c8dd868e2de3","PUBLIC_HEAP_APP_ID":"1808151529","PUBLIC_JOURNEY_APPLIED_STALLED_DAYS":"1","PUBLIC_JOURNEY_SELF_REPORT_GRACE_DAYS":"0","PUBLIC_LAUNCHDARKLY_CLIENT_ID":"null","PUBLIC_REDDIT_PIXEL_ID":"a2_jdyq0tk5dd2j","PUBLIC_STATIC_ASSETS_URL":"https://storage.googleapis.com/sunny-public/static","PUBLIC_SUNNY_API_BASE_URL":"https://api.sunny.com/api","PUBLIC_TYPEFORM_EVALUATION_FORM_ID":"O6lRcUyk","PUBLIC_TYPEFORM_FEEDBACK_FORM_ID":"sz2OtTwI","PUBLIC_WEB_PUSH_VAPID_PUBLIC_KEY":"BLJSgjMy7Ht6sUs3G6KQNECdVEba49YC0pdU4XggjQFTqEsHbu0I3oij-srwKTViy2CvbjQW3flbKDXFp_dspAc"},
+						defer: (id) => new Promise((fulfil, reject) => {
+							deferred.set(id, { fulfil, reject });
+						}),
+						resolve: async (id, fn) => {
+							const [data, error] = fn();
+
+							const try_to_resolve = () => {
+								if (!deferred.has(id)) {
+									setTimeout(try_to_resolve, 0);
+									return;
+								}
+								const { fulfil, reject } = deferred.get(id);
+								deferred.delete(id);
+								if (error) reject(error);
+								else fulfil(data);
+							}
+							try_to_resolve();
+						}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.yR8FaTp6.js"),
+						import("./_app/immutable/entry/app.CWyRicaN.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 12],
+							data: [{type:"data",data:{debug:false,user:null,eligibleCities:[],featureFlags:{"about-page":true,"ai-reach-out-behavior":"high_intent_only",cashback:true,"cashback-contact-us":true,"cashback-gift-card":"tremendous","deal-spotlight":true,"faq-page":true,"fast-path-first":false,"google-ads-remarketing":true,guarantee:false,"interest-absence-40s":true,"landing-v2":true,"map-unlock-wait-hours":false,"marketing-consent-default":true,"meta-retargeting":true,"pms-manual-events-enabled":true,"pms-on-demand-poll-enabled":true,"pms-renting-journey":false,"pms-scheduled-sync-enabled":true,"proactive-contact-dialog":true,"push-cashback-approved-enabled":false,"push-master-enabled":false,"reddit-pixel":true,"search-agents-enabled":false,"sms-cashback-approved-enabled":false,"sms-cashback-reminders-enabled":false,"sms-master-enabled":false,"worth-another-look":true},anonymousId:"3675045a-0e88-4c24-af60-5e39b2ea5b9a"},uses:{dependencies:["app:user","user:preferences"]}},(function(a){return {type:"data",data:{meta:{title:"Sunny"},allListingInterests:__sveltekit_b1hhig.defer(1),allListingHistory:__sveltekit_b1hhig.defer(2),rentalIdsWithSpecials:__sveltekit_b1hhig.defer(3),journeys:__sveltekit_b1hhig.defer(4),cashbackRecords:__sveltekit_b1hhig.defer(5),cashbackPayout:__sveltekit_b1hhig.defer(6),matches:a,guaranteeMatches:a,rentSpecialsMatches:a,fitsBudgetMatches:a,lowerPriceMatches:a,matchesTotal:0,guaranteeMatchesTotal:0,rentSpecialsMatchesTotal:0,fitsBudgetMatchesTotal:0,lowerPriceMatchesTotal:0,searchPreferences:void 0},uses:{dependencies:["landing:data"],parent:1}}}(Array(0)))],
+							form: null,
+							error: null
+						});
+					});
+
+					if ('serviceWorker' in navigator) {
+						addEventListener('load', function () {
+							navigator.serviceWorker.register('./service-worker.js');
+						});
+					}
+				}
+			</script>
+		</div>
+    <div id="sonner-top"></div>
+    <div id="sonner-bottom"></div>
+  </body>
+</html>
+
+<script>__sveltekit_b1hhig.resolve(1, () => [[]])</script>
+<script>__sveltekit_b1hhig.resolve(2, () => [void 0])</script>
+<script>__sveltekit_b1hhig.resolve(3, () => [[]])</script>
+<script>__sveltekit_b1hhig.resolve(4, () => [[]])</script>
+<script>__sveltekit_b1hhig.resolve(5, () => [[]])</script>
+<script>__sveltekit_b1hhig.resolve(6, () => [null])</script>
